@@ -1,0 +1,4 @@
+.grid_gallery{
+  display: grid; 
+  grid-template-columns: 15px 15px; 
+} 
