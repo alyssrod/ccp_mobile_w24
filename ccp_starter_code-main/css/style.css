@@ -1,114 +1,131 @@
-body,p {
-    font-family: Verdana, Tahoma, sans-serif; 
-    margin: 10px;
-    padding: 10px;
-    background-color: #f0f0f0;
-    text-align: center;
+body {
+    padding: 5%;
+    background-color: #EFD9B9;
 }
-
-nav {
-    background-color: #8b1515;
-    position: fixed; 
-    top: 0;
-    left: 0;
-    width: 100%;   
-    z-index: 1000; 
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 10px 15px;
-    display: block;
-   
-}
-
-nav ul li a.active{
-    background-color: #580e0e; 
-    color: #fff;
-    font-weight: bold; 
-    font-size: 1.2em; 
-    border-bottom: 2px solid rgba(255, 170, 0, 0.873); 
-}
-
-a[href="#main-content"] {
+.skip {
     position: absolute;
-    left: -999px;
-    background-color: #000;
-    color: #fff;
-    padding-top: 25px;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
-
-a[href="#main-content"]:focus {
-    left: 0;
+.skip:focus {
+    position: static;
+    padding: 10px;
 }
-
-.main-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin: 0 auto;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    align-content: center;
-}
-
-.main-grid > img,video{
-    padding: 20px;
-    width: 100%;
-    max-width: 300px;
-    margin:auto;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-h1{
-    font-size: 169%;
-    font-weight: lighter;
-    padding-top:80px;
-    padding-bottom:40px;
-    text-align: center;
-}
-
-h2{
-    font-size: 130%;
-    padding-top:20px;
-    padding-bottom:20px;
-    font-weight:bold;
-    text-align:center;
-}
-
-h3{
-    text-align:center;
-    font-weight:bold;
-    padding-bottom:5px;
-    padding-top:20px;
-}
-
-.main-picture{
-    display:inline-flex;
+h1 {
     margin-left: auto;
     margin-right: auto;
-    padding-bottom:20px;
-    /* position:center; */
-    width: 50%;
+    text-align: center;
+    font-family: Comic Sans MS;
+}
+h2 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    text-decoration: underline;
+    font-family: Comic Sans MS;
+}
+h3 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-family: Comic Sans MS;
+}
+.main_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 8%;
+}
+.sub_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    margin-top: 8%;
 }
 
-.list-center li{
+ul {
     text-align: center;
+    padding: 3%;
+}
+li {
+    display: inline-block;
+    list-style-type: none;
+    font-family: Comic Sans MS;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 3%;
+}
+a {
+    text-decoration: none;
+    font-size: 80%;
+    font-family: Comic Sans MS;
+    color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 15px;
+    background-color: lightsalmon;
+    padding: 7px;
+}
+.selected {
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: black;
+    color: lightsalmon;
+}
+p {
+    font-family: Comic Sans MS;
+    font-size: 75%;
+    text-align: center;
+}
+.pet_gallery{
+    margin-top: 10%;
+    display: grid;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+    margin-bottom: 10%;
+}
+
+.pet_gallery img {
+    width: 100%;
+}
+.likes_ul {
+    padding: 0%;
+}
+.likes_ul li {
+    margin-top: 0%;
+}
+ol {
+    text-align: center;
+    padding: 3%;
+}
+.recipe_gallery {
+    margin-top: 10%;
+    display: grid;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+    margin-bottom: 10%;
+}
+.recipe_gallery img {
+    width: 100%;
+}
+.third {
+    grid-column: 1 / 3;
 }
