@@ -22,7 +22,9 @@ nav a {
     font-weight: bold;
     font-size: 18px;
 }
-
+nav a[href$='pets.html'] {
+    color: #ffffff; 
+}
 nav a.active {
     text-decoration: underline;
 }
