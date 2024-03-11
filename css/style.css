@@ -1,128 +1,102 @@
-body, h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 5px;
+    padding: 5px;
+    line-height: 1.15;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
 }
 
-nav {
-    position: sticky; 
-    top: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #3498db; 
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
+h1, h2, h3 {
     font-weight: bold;
-    font-size: 18px;
-}
-
-nav a[href$='pets.html'] {
-    color: #2c3e50; 
-}
-
-nav a[href$='recipes.html'] {
-    color: #2c3e50;
-}
-
-nav a.active {
-    text-decoration: underline;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-body {
-    background: #ecf0f1;
-    color: #2c3e50; 
-    padding-top: 50px; 
-}
-
-main {
-    padding: 20px;
-}
-
-h1 {
-    color: #e74c3c; 
-    font-size: 2.5rem;
+    margin: 15px 0px;
+    color: #333;
     text-align: center;
 }
 
+h1 {
+    font-size: x-large;
+}
+
+h2 {
+    font-size: large;
+    font-style: italic;
+}
+
+h3 {
+    font-size: medium;
+    text-decoration: underline;
+}
+
+main img {
+    align-items: center;
+    border: double 6px #ffc8f7;
+    border-radius: 12px;
+}
+
 p {
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-.recipeintro {
-    background-color: #f39c12; 
-    color: #2c3e50;
-    padding: 20px;
-    margin: 20px 0;
-}
-
-.recipeintro a {
-    color: #e74c3c; 
-    font-weight: bold;
-}
-
-.recipelist {
-    font-size: 1rem;
+    line-height: 2;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #ffc8f7;
     margin-bottom: 10px;
-}
-
-.photogallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.gallery img {
-    border: 2px solid #3498db; 
-    width: 100%;
-    height: auto;
-}
-
-@media screen and (min-width: 768px) {
-    nav {
-        justify-content: space-between;
-    }
-
-    main {
-        padding: 40px;
-    }
-
-    h1 {
-        font-size: 3rem;
-    }
-
-    p {
-        font-size: 1.1rem;
-    }
-
-    .grid img,
-    .gallery img {
-        max-width: 100%;
-    }
-
-    .photogallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-.skip-link {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    background-color: #3498db;
-    color: white;
+    text-align: center;
     padding: 10px;
+    border-radius: 12px;
+}
+
+.button1, .button2, .button3, .button4 {
+    background-color: #ffc8f7;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
     text-decoration: none;
-    z-index: 100;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    justify-items: center;
+}
+
+.skip-to-main {
+    position: absolute;
+    left: -1000px;
+}
+
+.skip-to-main:focus {
+    position: relative;
+    left: 10px;
+}
+
+#homepage .button1, #petspage .button2, #recipespage .button3, #travelpage .button4 {
+    background-color: #a56ca0;
+    text-decoration: underline;
+    border: inset;
+}
+
+@media screen and (min-width: 700px) {
+
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .index_container, .pets_container, .recipes_container, .travel_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 10px;
+        margin: 10px;
+    }
+
+   
 }
