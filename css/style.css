@@ -45,6 +45,7 @@ p {
     border-radius: 12px;
 }
 
+/* Button Styles */
 .button1, .button2, .button3, .button4 {
     background-color: #ffc8f7;
     border: none;
@@ -57,8 +58,15 @@ p {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 12px;
+    transition: background-color 0.3s, color 0.3s; 
 }
 
+.button1:hover, .button2:hover, .button3:hover, .button4:hover {
+    background-color: #ffa3d2; 
+    color: white; 
+}
+
+/* Gallery Styles */
 .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -67,6 +75,7 @@ p {
     justify-items: center;
 }
 
+/* Skip-to-Main Styles */
 .skip-to-main {
     position: absolute;
     left: -1000px;
@@ -84,7 +93,6 @@ p {
 }
 
 @media screen and (min-width: 700px) {
-
     nav ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -97,6 +105,6 @@ p {
         row-gap: 10px;
         margin: 10px;
     }
-
+}
    
 }
