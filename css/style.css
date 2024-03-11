@@ -46,7 +46,7 @@ p {
 }
 
 .button1, .button2, .button3, .button4 {
-    background-color: #4caf50;
+    background-color: #ff69b4;
     border: none;
     color: white;
     padding: 12px 28px;
@@ -61,8 +61,8 @@ p {
 }
 
 .button1:hover, .button2:hover, .button3:hover, .button4:hover {
-    background-color: #45a049;
-    color: #fff;
+    background-color: #ff407a; 
+    color: white;
 }
 
 .gallery {
@@ -76,40 +76,4 @@ p {
     width: 100%;
     max-width: 300px;
     margin: 10px 0;
-    border: solid 2px #2196f3;
-    border-radius: 8px;
-}
-
-.skip-to-main {
-    position: absolute;
-    left: -9999px;
-}
-
-.skip-to-main:focus {
-    position: relative;
-    left: 5px;
-}
-
-#homepage .button1, #petspage .button2, #recipespage .button3, #travelpage .button4 {
-    background-color: #2196f3;
-    text-decoration: none;
-    border: outset;
-}
-
-@media screen and (min-width: 700px) {
-    nav ul {
-        display: flex;
-        justify-content: space-around;
-        background-color: #333;
-        padding: 10px;
-        border-radius: 8px;
-    }
-
-    .index_container, .pets_container, .recipes_container, .travel_container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 20px;
-    }
-}
-
+    border: solid 2px #ff69b4;
